@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰게임</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <span id="market"><img src="market.png" width="7%" /></span>
+
+    <div id="List">
+      <div id="Listimg">
+        <img
+          class="$ALL"
+          src="all.png"
+          alt="이미지를 불러오는중에 문제가 발생하였습니다."
+          width="20%"
+          onclick="Sensors.전체분별센서($ALL);"
+        />
+        <img
+          class="$Pants"
+          src="blue_p.png"
+          alt="이미지를 불러오는중에 문제가 발생하였습니다."
+          width="20%"
+          onclick="Sensors.바지분별센서($ALL);"
+        />
+        <img
+          class="$Skirt"
+          src="blue_s.png"
+          alt="이미지를 불러오는중에 문제가 발생하였습니다."
+          width="20%"
+          onclick="Sensors.스커트분별센서($ALL);"
+        />
+        <img
+          class="$Tshirts"
+          src="blue_t.png"
+          alt="이미지를 불러오는중에 문제가 발생하였습니다."
+          width="20%"
+          onclick="Sensors.티셔츠분별센서($ALL);"
+        />
+      </div>
+
+      <div id="Listtext">
+        <div class="Bluebox" onclick="Sensors.blue분별센서($ALL);">Blue</div>
+        <div class="Yellowbox" onclick="Sensors.yellow분별센서($ALL);">
+          Yellow
+        </div>
+        <div class="Pinkbox" onclick="Sensors.pink분별센서($ALL);">Pink</div>
+      </div>
+    </div>
+
+    <div id="List2">
+      <div class="item pants blue" id="456">
+        <img src="blue_p.png" alt="" /> <span>Blue pants</span>
+      </div>
+      <div class="item shirts blue">
+        <img src="blue_s.png" alt="" /> <span>Blue shirts</span>
+      </div>
+      <div class="item Tshirt blue">
+        <img src="blue_t.png" alt="" /> <span>Blue Tshirt</span>
+      </div>
+      <div class="item pants yellow">
+        <img src="yellow_p.png" alt="" /> <span>Yellow pants</span>
+      </div>
+
+      <div class="item shirts yellow">
+        <img src="yellow_s.png" alt="" /> <span>Yellow shirts</span>
+      </div>
+
+      <div class="item Tshirt yellow">
+        <img src="yellow_t.png" alt="" /> <span>Yellow Tshirt</span>
+      </div>
+
+      <div class="item pants pink">
+        <img src="pink_p.png" alt="" /> <span>Pink pants</span>
+      </div>
+      <div class="item shirts pink">
+        <img src="pink_s.png" alt="" /> <span>Pink shirts</span>
+      </div>
+      <div class="item Tshirt pink">
+        <img src="pink_t.png" alt="" /> <span>Pink Tshirt</span>
+      </div>
+    </div>
+  </body>
+</html>
